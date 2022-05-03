@@ -10,15 +10,13 @@
 		D4986C1E2821419F00BCD0B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C1D2821419F00BCD0B7 /* AppDelegate.swift */; };
 		D4986C202821419F00BCD0B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C1F2821419F00BCD0B7 /* SceneDelegate.swift */; };
 		D4986C27282141A000BCD0B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4986C26282141A000BCD0B7 /* Assets.xcassets */; };
-		D4986C35282141A000BCD0B7 /* DailyFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C34282141A000BCD0B7 /* DailyFXTests.swift */; };
-		D4986C3F282141A000BCD0B7 /* DailyFXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C3E282141A000BCD0B7 /* DailyFXUITests.swift */; };
-		D4986C41282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C40282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift */; };
 		D4986C4F2821457B00BCD0B7 /* Foundational in Resources */ = {isa = PBXBuildFile; fileRef = D4986C4E2821457B00BCD0B7 /* Foundational */; };
 		D4986C6E28215D8400BCD0B7 /* DailyFXService in Resources */ = {isa = PBXBuildFile; fileRef = D4986C6D28215D8400BCD0B7 /* DailyFXService */; };
 		D4986C7028215DF100BCD0B7 /* DailyFXService in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C6F28215DF100BCD0B7 /* DailyFXService */; };
 		D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C7128215E1300BCD0B7 /* Foundational */; };
 		D4986C74282166E600BCD0B7 /* Toolkit in Resources */ = {isa = PBXBuildFile; fileRef = D4986C73282166E600BCD0B7 /* Toolkit */; };
 		D4986C762821679500BCD0B7 /* Toolkit in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C752821679500BCD0B7 /* Toolkit */; };
+		D4B9256528229212000132DB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D4B9256428229212000132DB /* OrderedCollections */; };
 		D4DC8C6A28217E8B00F16778 /* Markets+Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC8C6928217E8B00F16778 /* Markets+Overview.swift */; };
 		D4DC8C6C28217F3100F16778 /* Market+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC8C6B28217F3100F16778 /* Market+List.swift */; };
 		D4FC737A28216A3300A6B98D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC737928216A3300A6B98D /* Home.swift */; };
@@ -27,34 +25,13 @@
 		D4FC73812821745000A6B98D /* NewsStory+Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC73802821745000A6B98D /* NewsStory+Detail.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D4986C31282141A000BCD0B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4986C122821419F00BCD0B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D4986C192821419F00BCD0B7;
-			remoteInfo = DailyFX;
-		};
-		D4986C3B282141A000BCD0B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4986C122821419F00BCD0B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D4986C192821419F00BCD0B7;
-			remoteInfo = DailyFX;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		D47B95A62822AF0C00D57A9E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D4986C1A2821419F00BCD0B7 /* DailyFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4986C1D2821419F00BCD0B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4986C1F2821419F00BCD0B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D4986C26282141A000BCD0B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4986C2B282141A000BCD0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4986C30282141A000BCD0B7 /* DailyFXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4986C34282141A000BCD0B7 /* DailyFXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXTests.swift; sourceTree = "<group>"; };
-		D4986C3A282141A000BCD0B7 /* DailyFXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4986C3E282141A000BCD0B7 /* DailyFXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITests.swift; sourceTree = "<group>"; };
-		D4986C40282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D4986C4E2821457B00BCD0B7 /* Foundational */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Foundational; sourceTree = "<group>"; };
 		D4986C6D28215D8400BCD0B7 /* DailyFXService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyFXService; sourceTree = "<group>"; };
 		D4986C73282166E600BCD0B7 /* Toolkit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Toolkit; sourceTree = "<group>"; };
@@ -73,21 +50,8 @@
 			files = (
 				D4986C762821679500BCD0B7 /* Toolkit in Frameworks */,
 				D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */,
+				D4B9256528229212000132DB /* OrderedCollections in Frameworks */,
 				D4986C7028215DF100BCD0B7 /* DailyFXService in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4986C2D282141A000BCD0B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4986C37282141A000BCD0B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +63,7 @@
 			children = (
 				D4986C4D2821455900BCD0B7 /* Packages */,
 				D4986C1C2821419F00BCD0B7 /* DailyFX */,
-				D4986C33282141A000BCD0B7 /* DailyFXTests */,
-				D4986C3D282141A000BCD0B7 /* DailyFXUITests */,
 				D4986C1B2821419F00BCD0B7 /* Products */,
-				D4986C50282145DC00BCD0B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				D4986C1A2821419F00BCD0B7 /* DailyFX.app */,
-				D4986C30282141A000BCD0B7 /* DailyFXTests.xctest */,
-				D4986C3A282141A000BCD0B7 /* DailyFXUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,58 +78,35 @@
 		D4986C1C2821419F00BCD0B7 /* DailyFX */ = {
 			isa = PBXGroup;
 			children = (
-				D4FC737B282173D700A6B98D /* Views */,
+				D47B95A62822AF0C00D57A9E /* README.md */,
+				D4986C2B282141A000BCD0B7 /* Info.plist */,
 				D4986C1D2821419F00BCD0B7 /* AppDelegate.swift */,
 				D4986C1F2821419F00BCD0B7 /* SceneDelegate.swift */,
 				D4986C26282141A000BCD0B7 /* Assets.xcassets */,
-				D4986C2B282141A000BCD0B7 /* Info.plist */,
+				D4FC737B282173D700A6B98D /* Views */,
 			);
 			path = DailyFX;
-			sourceTree = "<group>";
-		};
-		D4986C33282141A000BCD0B7 /* DailyFXTests */ = {
-			isa = PBXGroup;
-			children = (
-				D4986C34282141A000BCD0B7 /* DailyFXTests.swift */,
-			);
-			path = DailyFXTests;
-			sourceTree = "<group>";
-		};
-		D4986C3D282141A000BCD0B7 /* DailyFXUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D4986C3E282141A000BCD0B7 /* DailyFXUITests.swift */,
-				D4986C40282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift */,
-			);
-			path = DailyFXUITests;
 			sourceTree = "<group>";
 		};
 		D4986C4D2821455900BCD0B7 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				D4986C73282166E600BCD0B7 /* Toolkit */,
 				D4986C6D28215D8400BCD0B7 /* DailyFXService */,
+				D4986C73282166E600BCD0B7 /* Toolkit */,
 				D4986C4E2821457B00BCD0B7 /* Foundational */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
 		};
-		D4986C50282145DC00BCD0B7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D4FC737B282173D700A6B98D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D4FC737928216A3300A6B98D /* Home.swift */,
 				D4FC737C282173EB00A6B98D /* Dashboard+Overview.swift */,
+				D4FC737928216A3300A6B98D /* Home.swift */,
+				D4DC8C6B28217F3100F16778 /* Market+List.swift */,
+				D4DC8C6928217E8B00F16778 /* Markets+Overview.swift */,
 				D4FC73802821745000A6B98D /* NewsStory+Detail.swift */,
 				D4FC737E2821740000A6B98D /* NewsStory+List.swift */,
-				D4DC8C6928217E8B00F16778 /* Markets+Overview.swift */,
-				D4DC8C6B28217F3100F16778 /* Market+List.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,46 +131,11 @@
 				D4986C6F28215DF100BCD0B7 /* DailyFXService */,
 				D4986C7128215E1300BCD0B7 /* Foundational */,
 				D4986C752821679500BCD0B7 /* Toolkit */,
+				D4B9256428229212000132DB /* OrderedCollections */,
 			);
 			productName = DailyFX;
 			productReference = D4986C1A2821419F00BCD0B7 /* DailyFX.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D4986C2F282141A000BCD0B7 /* DailyFXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4986C47282141A000BCD0B7 /* Build configuration list for PBXNativeTarget "DailyFXTests" */;
-			buildPhases = (
-				D4986C2C282141A000BCD0B7 /* Sources */,
-				D4986C2D282141A000BCD0B7 /* Frameworks */,
-				D4986C2E282141A000BCD0B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D4986C32282141A000BCD0B7 /* PBXTargetDependency */,
-			);
-			name = DailyFXTests;
-			productName = DailyFXTests;
-			productReference = D4986C30282141A000BCD0B7 /* DailyFXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D4986C39282141A000BCD0B7 /* DailyFXUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4986C4A282141A000BCD0B7 /* Build configuration list for PBXNativeTarget "DailyFXUITests" */;
-			buildPhases = (
-				D4986C36282141A000BCD0B7 /* Sources */,
-				D4986C37282141A000BCD0B7 /* Frameworks */,
-				D4986C38282141A000BCD0B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D4986C3C282141A000BCD0B7 /* PBXTargetDependency */,
-			);
-			name = DailyFXUITests;
-			productName = DailyFXUITests;
-			productReference = D4986C3A282141A000BCD0B7 /* DailyFXUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -249,14 +150,6 @@
 					D4986C192821419F00BCD0B7 = {
 						CreatedOnToolsVersion = 13.3;
 					};
-					D4986C2F282141A000BCD0B7 = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = D4986C192821419F00BCD0B7;
-					};
-					D4986C39282141A000BCD0B7 = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = D4986C192821419F00BCD0B7;
-					};
 				};
 			};
 			buildConfigurationList = D4986C152821419F00BCD0B7 /* Build configuration list for PBXProject "DailyFX" */;
@@ -268,13 +161,14 @@
 				Base,
 			);
 			mainGroup = D4986C112821419F00BCD0B7;
+			packageReferences = (
+				D4B9256328229212000132DB /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = D4986C1B2821419F00BCD0B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D4986C192821419F00BCD0B7 /* DailyFX */,
-				D4986C2F282141A000BCD0B7 /* DailyFXTests */,
-				D4986C39282141A000BCD0B7 /* DailyFXUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,20 +182,6 @@
 				D4986C74282166E600BCD0B7 /* Toolkit in Resources */,
 				D4986C27282141A000BCD0B7 /* Assets.xcassets in Resources */,
 				D4986C6E28215D8400BCD0B7 /* DailyFXService in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4986C2E282141A000BCD0B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4986C38282141A000BCD0B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,37 +203,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4986C2C282141A000BCD0B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4986C35282141A000BCD0B7 /* DailyFXTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4986C36282141A000BCD0B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4986C41282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift in Sources */,
-				D4986C3F282141A000BCD0B7 /* DailyFXUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D4986C32282141A000BCD0B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D4986C192821419F00BCD0B7 /* DailyFX */;
-			targetProxy = D4986C31282141A000BCD0B7 /* PBXContainerItemProxy */;
-		};
-		D4986C3C282141A000BCD0B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D4986C192821419F00BCD0B7 /* DailyFX */;
-			targetProxy = D4986C3B282141A000BCD0B7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D4986C42282141A000BCD0B7 /* Debug */ = {
@@ -480,6 +330,7 @@
 				DEVELOPMENT_TEAM = 2J5Z57S38N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyFX/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily FX";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -506,6 +357,7 @@
 				DEVELOPMENT_TEAM = 2J5Z57S38N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyFX/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily FX";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -519,82 +371,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D4986C48282141A000BCD0B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2J5Z57S38N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.noahknudsen.DailyFXTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyFX.app/DailyFX";
-			};
-			name = Debug;
-		};
-		D4986C49282141A000BCD0B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2J5Z57S38N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.noahknudsen.DailyFXTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyFX.app/DailyFX";
-			};
-			name = Release;
-		};
-		D4986C4B282141A000BCD0B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2J5Z57S38N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.noahknudsen.DailyFXUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyFX;
-			};
-			name = Debug;
-		};
-		D4986C4C282141A000BCD0B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2J5Z57S38N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.noahknudsen.DailyFXUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyFX;
 			};
 			name = Release;
 		};
@@ -619,25 +395,18 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4986C47282141A000BCD0B7 /* Build configuration list for PBXNativeTarget "DailyFXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4986C48282141A000BCD0B7 /* Debug */,
-				D4986C49282141A000BCD0B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4986C4A282141A000BCD0B7 /* Build configuration list for PBXNativeTarget "DailyFXUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4986C4B282141A000BCD0B7 /* Debug */,
-				D4986C4C282141A000BCD0B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4B9256328229212000132DB /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		D4986C6F28215DF100BCD0B7 /* DailyFXService */ = {
@@ -651,6 +420,11 @@
 		D4986C752821679500BCD0B7 /* Toolkit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Toolkit;
+		};
+		D4B9256428229212000132DB /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4B9256328229212000132DB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

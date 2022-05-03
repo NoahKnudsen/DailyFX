@@ -5,6 +5,7 @@
 import DailyFXService
 import SwiftUI
 import Toolkit
+import Foundational
 
 extension NewsStory {
     
@@ -15,25 +16,7 @@ extension NewsStory {
         var body: some View {
             ScrollView {
                 
-                AsyncImage(
-                    url: story.headlineImageUrl,
-                    content: { image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                    },
-                    placeholder: {
-                        Rectangle()
-                            .fill(Color.gray)
-                            .overlay{
-                                Image(systemName: "photo")
-                                    .foregroundColor(Color(UIColor.lightGray))
-                                    .font(.title)
-                            }
-                            .frame(minHeight: 150)
-                    }
-                )
-                .frame(maxWidth: .infinity)
+                HeadlineImage(story)
                 
                 VStack(spacing: 15) {
                     
@@ -53,11 +36,19 @@ extension NewsStory {
                             title: "Description",
                             value: story.description
                         )
+                    
+                        LabelGroup.hiddenIfNil(
+                            title: "Instruments",
+                            value: story.instruments
+                                .unique(by: identity)
+                                .joined(separator: ", ")
+                                .ifNotEmpty
+                        )
                         
                         LabelGroup.hiddenIfNil(
                             title: "Tags",
                             value: story.tags
-                                .sorted(by: {$0})
+                                .unique(by: identity)
                                 .joined(separator: ", ")
                                 .ifNotEmpty
                         )
@@ -68,5 +59,36 @@ extension NewsStory {
             .navigationTitle(story.title)
             .navigationBarTitleDisplayMode(.inline)
         }
+    }
+}
+
+private struct HeadlineImage: View {
+    
+    let story: NewsStory
+    
+    init(_ story: NewsStory) {
+        self.story = story
+    }
+    
+    var body: some View {
+        AsyncImage(
+            url: story.headlineImageUrl,
+            content: { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+            },
+            placeholder: {
+                Rectangle()
+                    .fill(Color.gray)
+                    .overlay{
+                        Image(systemName: "photo")
+                            .foregroundColor(Color(UIColor.lightGray))
+                            .font(.title)
+                    }
+                    .aspectRatio(.init(width: 16, height: 9), contentMode: .fit)
+            }
+        )
+        .frame(maxWidth: .infinity, maxHeight: 275)
     }
 }

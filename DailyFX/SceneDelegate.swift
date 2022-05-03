@@ -1,11 +1,7 @@
 //
-//  SceneDelegate.swift
-//  DailyFX
-//
 //  Created by Noah Knudsen on 03/05/2022.
 //
 
-import UIKit
 import Foundational
 import SwiftUI
 

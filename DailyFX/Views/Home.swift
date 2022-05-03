@@ -10,53 +10,27 @@ struct Home: View {
     
     @StateObject var service = DailyFXService()
     
-    init() {
-        let service = DailyFXService()
-        _service = .init(wrappedValue: service)
-        
-    }
-    
     var body: some View {
         TabView(content: {
             
             Dashboard.Overview()
                 .environmentObject(Observable(service.dashboard()))
-                .tabItem{ tab(.dashboard) }
-                .navigationTitle("Dashboard")
+                .tab("Dashboard", "newspaper")
             
             Markets.Overview()
                 .environmentObject(Observable(service.markets()))
-                .tabItem{ tab(.markets) }
-                .navigationTitle("Markets")
+                .tab("Markets", "chart.line.uptrend.xyaxis")
         })
-    }
-    
-    func tab(_ tab: Tab) -> some View {
-        HStack {
-            Image(systemName: tab.icon)
-            Text(tab.title)
-        }
     }
 }
 
-extension Home {
+private extension View {
     
-    enum Tab {
-        
-        case dashboard
-        case markets
-        
-        var title: String {
-            switch self {
-            case .dashboard: return "Dashboard"
-            case .markets: return "Markets"
-            }
-        }
-        
-        var icon: String {
-            switch self {
-            case .dashboard: return "newspaper"
-            case .markets: return "chart.line.uptrend.xyaxis"
+    func tab(_ title: String, _ icon: String) -> some View {
+        self.tabItem{
+            HStack {
+                Image(systemName: icon)
+                Text(title)
             }
         }
     }

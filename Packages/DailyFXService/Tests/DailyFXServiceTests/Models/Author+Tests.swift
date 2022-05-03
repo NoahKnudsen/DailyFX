@@ -33,21 +33,4 @@ extension Author {
             photo: URL("https://example.com/david.png")
         )
     )
-    
-    static func minimalExample(_ name: String) -> Author {
-        return Author(
-            name: name,
-            title: nil,
-            bio: nil,
-            email: nil,
-            phone: nil,
-            facebook: nil,
-            twitter: nil,
-            googleplus: nil,
-            rss: nil,
-            descriptionLong: nil,
-            descriptionShort: nil,
-            photo: nil
-        )
-    }
 }

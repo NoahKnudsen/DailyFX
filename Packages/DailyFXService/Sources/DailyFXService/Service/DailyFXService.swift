@@ -17,11 +17,11 @@ public class DailyFXService: ObservableObject {
 public extension DailyFXService {
     
     func dashboard() -> AsyncThrowingStream<Dashboard, Error> {
-        fetch(URL("https://content.dailyfx.com/api/v1/dashboard"))
+        fetch(Endpoint.dashboard.url)
     }
     
     func markets() -> AsyncThrowingStream<Markets, Error> {
-        fetch(URL("https://content.dailyfx.com/api/v1/markets"))
+        fetch(Endpoint.markets.url)
     }
 }
 
@@ -31,12 +31,12 @@ extension DailyFXService {
         AsyncThrowingStream<T, Error>{ continuation in
             Task {
                 do {
+                    // TODO: Handle response as well as Data
                     let (data, _) = try await session.data(from: url.peek("🌍"))
                     continuation.yield(try JSONDecoder().decode(T.self, from: data))
                     continuation.finish()
                 } catch {
-                    print("❌", error)
-                    continuation.finish(throwing: error)
+                    continuation.finish(throwing: error.peek("❌"))
                 }
             }
         }

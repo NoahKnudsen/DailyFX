@@ -4,7 +4,7 @@
 
 import Foundation
 
-@available(iOS, deprecated: 15.0)
+@available(iOS, deprecated: 15.0, message: "Backported APIs no longer required after iOS15")
 public extension URLSession {
     
     func data(from url: URL) async throws -> (Data, URLResponse) {

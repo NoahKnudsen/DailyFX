@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(name: "DailyFXService", targets: ["DailyFXService"]),
     ],
-    dependencies: [.package(path: "../Foundational")],
+    dependencies: [ .package(path: "../Foundational") ],
     targets: [
         .target(
             name: "DailyFXService",

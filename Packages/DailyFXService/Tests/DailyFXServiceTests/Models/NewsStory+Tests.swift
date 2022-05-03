@@ -23,35 +23,15 @@ extension NewsStory {
             url: URL("https://www.example.com"),
             description: "Lower gold prices endure...",
             content: nil,
-            firstImageUrl: URL("https://example.com/first-image.png"),
             headlineImageUrl: URL("https://example.com/headline-image.png"),
-            articleImageUrl: URL("https://example.com/article-image.png"),
-            backgroundImageUrl: URL("https://example.com/background-image.png"),
-            authors: [.minimalExample("David")],
+            authors: [Author(name: "David")],
             instruments: ["FOMC", "USD", "GOLD"],
             tags: ["Gold price forecast", "Spot gold analysis"],
-            categories: ["forex", "market_alert"],
-            displayDate: Date(timeIntervalSince1970: 1651564800000),
-            lastUpdatedDate: Date(timeIntervalSince1970: 1651562724469)
+            categories: ["forex", "market_alert"]
         )
     )
     
-    static func minimalExample(_ title: String) -> NewsStory {
-        return NewsStory(
-            title: title,
-            url: URL("https://example.com"),
-            description: "",
-            content: nil,
-            firstImageUrl: nil,
-            headlineImageUrl: nil,
-            articleImageUrl: nil,
-            backgroundImageUrl: nil,
-            authors: [],
-            instruments: [],
-            tags: [],
-            categories: [],
-            displayDate: Date(timeIntervalSince1970: 0),
-            lastUpdatedDate: Date(timeIntervalSince1970: 1)
-        )
+    init(_ title: String) {
+        self.init(title: title, url: URL("https://example.com"))
     }
 }

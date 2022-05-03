@@ -1,11 +1,12 @@
 //
-//  Created by Noah Knudsen on 01/05/2022.
+//  Created by Noah Knudsen on 03/05/2022.
 //
 
 import Foundation
 
 public extension Collection {
     
+    var isNotEmpty: Bool { !isEmpty }
     var ifNotEmpty: Self? { isEmpty ? nil : self }
 }
 

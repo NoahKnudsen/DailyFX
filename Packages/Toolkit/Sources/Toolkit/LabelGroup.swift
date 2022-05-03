@@ -4,13 +4,13 @@
 
 import SwiftUI
 
-public struct LabelGroup<Content: View>: View {
+public struct LabelGroup<Title: View, Content: View>: View {
         
-    private let title: Text
+    private let title: Title
     private let content: Content
     
     public init(
-        @ViewBuilder title: () -> Text,
+        @ViewBuilder title: () -> Title,
         @ViewBuilder content: () -> Content
     ) {
         self.title = title()
@@ -25,25 +25,38 @@ public struct LabelGroup<Content: View>: View {
             
             content
         }
+        .accessibilityElement(children: .combine)
     }
 }
 
-public extension LabelGroup {
+public extension LabelGroup where Title == AnyView {
 
     init(title: String, @ViewBuilder content: () -> Content) {
         self.init(
-            title: { Text(title) },
+            title: {
+                Text(title)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .any
+            },
             content: content
         )
     }
 }
 
-public extension LabelGroup where Content == Text {
+public extension LabelGroup where Title == AnyView, Content == AnyView {
     
     init(title: String, value: String) {
         self.init(
-            title: { Text(title) },
-            content: { Text(value) }
+            title: {
+                Text(title)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .any
+            },
+            content: {
+                Text(value)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .any
+            }
         )
     }
     

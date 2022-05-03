@@ -19,15 +19,15 @@ extension Dashboard {
     static let testData = TestDataModel(
         jsonResource: "dashboard.json",
         model: Dashboard(
-            breakingNews: [.minimalExample("breaking")],
-            topNews: [.minimalExample("top")],
+            breakingNews: [.init("breaking")],
+            topNews: [.init("top")],
             dailyBriefings: DailyBriefing(
-                eu: [.minimalExample("eu")],
-                asia: [.minimalExample("asia")],
-                us: [.minimalExample("us")]
+                eu: [.init("eu")],
+                asia: [.init("asia")],
+                us: [.init("us")]
             ),
-            technicalAnalysis: [.minimalExample("tech")],
-            specialReport: [.minimalExample("special")]
+            technicalAnalysis: [.init("tech")],
+            specialReport: [.init("special")]
         )
     )
 }
