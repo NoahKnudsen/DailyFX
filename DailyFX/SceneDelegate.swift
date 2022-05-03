@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundational
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,10 +20,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
         }
     }
-}
-
-@discardableResult
-public func with<T>(_ t: T, _ f: (T) throws -> ()) rethrows -> T {
-    try f(t)
-    return t
 }

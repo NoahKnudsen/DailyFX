@@ -14,6 +14,8 @@
 		D4986C35282141A000BCD0B7 /* DailyFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C34282141A000BCD0B7 /* DailyFXTests.swift */; };
 		D4986C3F282141A000BCD0B7 /* DailyFXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C3E282141A000BCD0B7 /* DailyFXUITests.swift */; };
 		D4986C41282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C40282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift */; };
+		D4986C4F2821457B00BCD0B7 /* Foundational in Resources */ = {isa = PBXBuildFile; fileRef = D4986C4E2821457B00BCD0B7 /* Foundational */; };
+		D4986C52282145DC00BCD0B7 /* Foundational in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C51282145DC00BCD0B7 /* Foundational */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		D4986C3A282141A000BCD0B7 /* DailyFXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4986C3E282141A000BCD0B7 /* DailyFXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITests.swift; sourceTree = "<group>"; };
 		D4986C40282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4986C4E2821457B00BCD0B7 /* Foundational */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Foundational; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4986C52282145DC00BCD0B7 /* Foundational in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +79,12 @@
 		D4986C112821419F00BCD0B7 = {
 			isa = PBXGroup;
 			children = (
+				D4986C4D2821455900BCD0B7 /* Packages */,
 				D4986C1C2821419F00BCD0B7 /* DailyFX */,
 				D4986C33282141A000BCD0B7 /* DailyFXTests */,
 				D4986C3D282141A000BCD0B7 /* DailyFXUITests */,
 				D4986C1B2821419F00BCD0B7 /* Products */,
+				D4986C50282145DC00BCD0B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +127,21 @@
 			path = DailyFXUITests;
 			sourceTree = "<group>";
 		};
+		D4986C4D2821455900BCD0B7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D4986C4E2821457B00BCD0B7 /* Foundational */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		D4986C50282145DC00BCD0B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +158,9 @@
 			dependencies = (
 			);
 			name = DailyFX;
+			packageProductDependencies = (
+				D4986C51282145DC00BCD0B7 /* Foundational */,
+			);
 			productName = DailyFX;
 			productReference = D4986C1A2821419F00BCD0B7 /* DailyFX.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4986C4F2821457B00BCD0B7 /* Foundational in Resources */,
 				D4986C27282141A000BCD0B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +596,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4986C51282145DC00BCD0B7 /* Foundational */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Foundational;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4986C122821419F00BCD0B7 /* Project object */;
 }
