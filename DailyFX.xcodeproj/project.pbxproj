@@ -15,7 +15,9 @@
 		D4986C3F282141A000BCD0B7 /* DailyFXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C3E282141A000BCD0B7 /* DailyFXUITests.swift */; };
 		D4986C41282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4986C40282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift */; };
 		D4986C4F2821457B00BCD0B7 /* Foundational in Resources */ = {isa = PBXBuildFile; fileRef = D4986C4E2821457B00BCD0B7 /* Foundational */; };
-		D4986C52282145DC00BCD0B7 /* Foundational in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C51282145DC00BCD0B7 /* Foundational */; };
+		D4986C6E28215D8400BCD0B7 /* DailyFXService in Resources */ = {isa = PBXBuildFile; fileRef = D4986C6D28215D8400BCD0B7 /* DailyFXService */; };
+		D4986C7028215DF100BCD0B7 /* DailyFXService in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C6F28215DF100BCD0B7 /* DailyFXService */; };
+		D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C7128215E1300BCD0B7 /* Foundational */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		D4986C3E282141A000BCD0B7 /* DailyFXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITests.swift; sourceTree = "<group>"; };
 		D4986C40282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D4986C4E2821457B00BCD0B7 /* Foundational */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Foundational; sourceTree = "<group>"; };
+		D4986C6D28215D8400BCD0B7 /* DailyFXService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyFXService; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4986C52282145DC00BCD0B7 /* Foundational in Frameworks */,
+				D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */,
+				D4986C7028215DF100BCD0B7 /* DailyFXService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,7 @@
 		D4986C4D2821455900BCD0B7 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				D4986C6D28215D8400BCD0B7 /* DailyFXService */,
 				D4986C4E2821457B00BCD0B7 /* Foundational */,
 			);
 			path = Packages;
@@ -159,7 +164,8 @@
 			);
 			name = DailyFX;
 			packageProductDependencies = (
-				D4986C51282145DC00BCD0B7 /* Foundational */,
+				D4986C6F28215DF100BCD0B7 /* DailyFXService */,
+				D4986C7128215E1300BCD0B7 /* Foundational */,
 			);
 			productName = DailyFX;
 			productReference = D4986C1A2821419F00BCD0B7 /* DailyFX.app */;
@@ -251,6 +257,7 @@
 			files = (
 				D4986C4F2821457B00BCD0B7 /* Foundational in Resources */,
 				D4986C27282141A000BCD0B7 /* Assets.xcassets in Resources */,
+				D4986C6E28215D8400BCD0B7 /* DailyFXService in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +605,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D4986C51282145DC00BCD0B7 /* Foundational */ = {
+		D4986C6F28215DF100BCD0B7 /* DailyFXService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DailyFXService;
+		};
+		D4986C7128215E1300BCD0B7 /* Foundational */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Foundational;
 		};
