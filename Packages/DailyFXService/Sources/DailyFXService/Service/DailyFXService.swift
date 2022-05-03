@@ -19,6 +19,10 @@ public extension DailyFXService {
     func dashboard() -> AsyncThrowingStream<Dashboard, Error> {
         fetch(URL("https://content.dailyfx.com/api/v1/dashboard"))
     }
+    
+    func markets() -> AsyncThrowingStream<Markets, Error> {
+        fetch(URL("https://content.dailyfx.com/api/v1/markets"))
+    }
 }
 
 extension DailyFXService {

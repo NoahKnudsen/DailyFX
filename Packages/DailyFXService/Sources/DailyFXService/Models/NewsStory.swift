@@ -8,7 +8,7 @@ public struct NewsStory: Codable, Equatable {
     
     public let title: String
     public let url: URL
-    public let description: String
+    public let description: String?
     public let content: String?
     public let firstImageUrl: URL?
     public let headlineImageUrl: URL?
@@ -29,7 +29,7 @@ public extension NewsStory {
         
         title               = try o.decode(.title)
         url                 = try o.decode(.url)
-        description         = try o.decode(.description)
+        description         = try? o.decode(.description)
         content             = try? o.decode(.content)
         firstImageUrl       = try? o.decode(.firstImageUrl)
         headlineImageUrl    = try? o.decode(.headlineImageUrl)

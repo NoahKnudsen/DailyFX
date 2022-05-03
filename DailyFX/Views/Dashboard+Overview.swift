@@ -22,11 +22,15 @@ extension Dashboard {
         
         func newsStoryList(_ dashboard: Dashboard) -> some View {
             NavigationView {
-                List{
-                    NewsStory.List("Breaking News", dashboard.breakingNews)
-                    NewsStory.List("Top News", dashboard.topNews)
-                    NewsStory.List("Technical Analysis", dashboard.technicalAnalysis)
-                    NewsStory.List("Special Reports", dashboard.specialReport)
+                VStack{
+                    List{
+                        NewsStory.List("Breaking News", dashboard.breakingNews)
+                            
+                        NewsStory.List("Top News", dashboard.topNews)
+                        NewsStory.List("Technical Analysis", dashboard.technicalAnalysis)
+                        NewsStory.List("Special Reports", dashboard.specialReport)
+                    }
+                    .navigationTitle("Dashboard")
                 }
                 Text("Select a story")
             }

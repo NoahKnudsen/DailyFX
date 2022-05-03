@@ -25,7 +25,7 @@ extension NewsStory {
                             Text(story.title)
                         }
                     }
-                }.navigationTitle(title)
+                }//.navigationTitle(title)
             }
         }
     }
