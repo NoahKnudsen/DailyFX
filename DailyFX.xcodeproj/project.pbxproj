@@ -18,6 +18,8 @@
 		D4986C6E28215D8400BCD0B7 /* DailyFXService in Resources */ = {isa = PBXBuildFile; fileRef = D4986C6D28215D8400BCD0B7 /* DailyFXService */; };
 		D4986C7028215DF100BCD0B7 /* DailyFXService in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C6F28215DF100BCD0B7 /* DailyFXService */; };
 		D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C7128215E1300BCD0B7 /* Foundational */; };
+		D4986C74282166E600BCD0B7 /* Toolkit in Resources */ = {isa = PBXBuildFile; fileRef = D4986C73282166E600BCD0B7 /* Toolkit */; };
+		D4986C762821679500BCD0B7 /* Toolkit in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C752821679500BCD0B7 /* Toolkit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		D4986C40282141A000BCD0B7 /* DailyFXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D4986C4E2821457B00BCD0B7 /* Foundational */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Foundational; sourceTree = "<group>"; };
 		D4986C6D28215D8400BCD0B7 /* DailyFXService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyFXService; sourceTree = "<group>"; };
+		D4986C73282166E600BCD0B7 /* Toolkit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Toolkit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4986C762821679500BCD0B7 /* Toolkit in Frameworks */,
 				D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */,
 				D4986C7028215DF100BCD0B7 /* DailyFXService in Frameworks */,
 			);
@@ -134,6 +138,7 @@
 		D4986C4D2821455900BCD0B7 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				D4986C73282166E600BCD0B7 /* Toolkit */,
 				D4986C6D28215D8400BCD0B7 /* DailyFXService */,
 				D4986C4E2821457B00BCD0B7 /* Foundational */,
 			);
@@ -166,6 +171,7 @@
 			packageProductDependencies = (
 				D4986C6F28215DF100BCD0B7 /* DailyFXService */,
 				D4986C7128215E1300BCD0B7 /* Foundational */,
+				D4986C752821679500BCD0B7 /* Toolkit */,
 			);
 			productName = DailyFX;
 			productReference = D4986C1A2821419F00BCD0B7 /* DailyFX.app */;
@@ -256,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4986C4F2821457B00BCD0B7 /* Foundational in Resources */,
+				D4986C74282166E600BCD0B7 /* Toolkit in Resources */,
 				D4986C27282141A000BCD0B7 /* Assets.xcassets in Resources */,
 				D4986C6E28215D8400BCD0B7 /* DailyFXService in Resources */,
 			);
@@ -612,6 +619,10 @@
 		D4986C7128215E1300BCD0B7 /* Foundational */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Foundational;
+		};
+		D4986C752821679500BCD0B7 /* Toolkit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Toolkit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
