@@ -20,6 +20,7 @@
 		D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C7128215E1300BCD0B7 /* Foundational */; };
 		D4986C74282166E600BCD0B7 /* Toolkit in Resources */ = {isa = PBXBuildFile; fileRef = D4986C73282166E600BCD0B7 /* Toolkit */; };
 		D4986C762821679500BCD0B7 /* Toolkit in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C752821679500BCD0B7 /* Toolkit */; };
+		D4FC737A28216A3300A6B98D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC737928216A3300A6B98D /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		D4986C4E2821457B00BCD0B7 /* Foundational */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Foundational; sourceTree = "<group>"; };
 		D4986C6D28215D8400BCD0B7 /* DailyFXService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyFXService; sourceTree = "<group>"; };
 		D4986C73282166E600BCD0B7 /* Toolkit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Toolkit; sourceTree = "<group>"; };
+		D4FC737928216A3300A6B98D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				D4986C212821419F00BCD0B7 /* ViewController.swift */,
 				D4986C26282141A000BCD0B7 /* Assets.xcassets */,
 				D4986C2B282141A000BCD0B7 /* Info.plist */,
+				D4FC737928216A3300A6B98D /* ContentView.swift */,
 			);
 			path = DailyFX;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				D4986C222821419F00BCD0B7 /* ViewController.swift in Sources */,
 				D4986C1E2821419F00BCD0B7 /* AppDelegate.swift in Sources */,
+				D4FC737A28216A3300A6B98D /* ContentView.swift in Sources */,
 				D4986C202821419F00BCD0B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundational
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -20,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         self.window = with(UIWindow(windowScene: windowScene)) { window in
-            window.rootViewController = ViewController()
+            window.rootViewController = UIHostingController(rootView: ContentView())
             window.makeKeyAndVisible()
         }
     }

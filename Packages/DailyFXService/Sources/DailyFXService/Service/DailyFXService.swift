@@ -16,17 +16,25 @@ public class DailyFXService: ObservableObject {
 
 public extension DailyFXService {
     
-    func dashboard() async throws -> AnyPublisher<Dashboard, Error> {
+    func dashboard() -> AsyncThrowingStream<Dashboard, Error> {
         fetch(URL("https://content.dailyfx.com/api/v1/dashboard"))
     }
 }
 
 extension DailyFXService {
     
-    func fetch<T: Decodable>(_ url: URL) -> AnyPublisher<T, Error> {
-        return session.dataTaskPublisher(for: url.peek("🌍"))
-            .map(\.data)
-            .decode(type: T.self, decoder: JSONDecoder())
-            .eraseToAnyPublisher()
+    func fetch<T: Decodable>(_ url: URL) -> AsyncThrowingStream<T, Error> {
+        AsyncThrowingStream<T, Error>{ continuation in
+            Task {
+                do {
+                    let (data, _) = try await session.data(from: url.peek("🌍"))
+                    continuation.yield(try JSONDecoder().decode(T.self, from: data))
+                    continuation.finish()
+                } catch {
+                    print("❌", error)
+                    continuation.finish(throwing: error)
+                }
+            }
+        }
     }
 }
