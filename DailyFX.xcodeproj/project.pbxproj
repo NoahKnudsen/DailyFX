@@ -12,21 +12,20 @@
 		D4986C27282141A000BCD0B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4986C26282141A000BCD0B7 /* Assets.xcassets */; };
 		D4986C4F2821457B00BCD0B7 /* Foundational in Resources */ = {isa = PBXBuildFile; fileRef = D4986C4E2821457B00BCD0B7 /* Foundational */; };
 		D4986C6E28215D8400BCD0B7 /* DailyFXService in Resources */ = {isa = PBXBuildFile; fileRef = D4986C6D28215D8400BCD0B7 /* DailyFXService */; };
-		D4986C7028215DF100BCD0B7 /* DailyFXService in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C6F28215DF100BCD0B7 /* DailyFXService */; };
 		D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C7128215E1300BCD0B7 /* Foundational */; };
 		D4986C74282166E600BCD0B7 /* Toolkit in Resources */ = {isa = PBXBuildFile; fileRef = D4986C73282166E600BCD0B7 /* Toolkit */; };
 		D4986C762821679500BCD0B7 /* Toolkit in Frameworks */ = {isa = PBXBuildFile; productRef = D4986C752821679500BCD0B7 /* Toolkit */; };
-		D4B9256528229212000132DB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D4B9256428229212000132DB /* OrderedCollections */; };
 		D4DC8C6A28217E8B00F16778 /* Markets+Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC8C6928217E8B00F16778 /* Markets+Overview.swift */; };
 		D4DC8C6C28217F3100F16778 /* Market+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC8C6B28217F3100F16778 /* Market+List.swift */; };
 		D4FC737A28216A3300A6B98D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC737928216A3300A6B98D /* Home.swift */; };
 		D4FC737D282173EB00A6B98D /* Dashboard+Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC737C282173EB00A6B98D /* Dashboard+Overview.swift */; };
 		D4FC737F2821740000A6B98D /* NewsStory+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC737E2821740000A6B98D /* NewsStory+List.swift */; };
 		D4FC73812821745000A6B98D /* NewsStory+Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC73802821745000A6B98D /* NewsStory+Detail.swift */; };
+		D4FF94C12822EF1F00C10CF5 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D4FF94C02822EF1F00C10CF5 /* OrderedCollections */; };
+		D4FF94C42822EF4400C10CF5 /* DailyFXService in Frameworks */ = {isa = PBXBuildFile; productRef = D4FF94C32822EF4400C10CF5 /* DailyFXService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D47B95A62822AF0C00D57A9E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D4986C1A2821419F00BCD0B7 /* DailyFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4986C1D2821419F00BCD0B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4986C1F2821419F00BCD0B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,10 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FF94C42822EF4400C10CF5 /* DailyFXService in Frameworks */,
 				D4986C762821679500BCD0B7 /* Toolkit in Frameworks */,
 				D4986C7228215E1300BCD0B7 /* Foundational in Frameworks */,
-				D4B9256528229212000132DB /* OrderedCollections in Frameworks */,
-				D4986C7028215DF100BCD0B7 /* DailyFXService in Frameworks */,
+				D4FF94C12822EF1F00C10CF5 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +63,7 @@
 				D4986C4D2821455900BCD0B7 /* Packages */,
 				D4986C1C2821419F00BCD0B7 /* DailyFX */,
 				D4986C1B2821419F00BCD0B7 /* Products */,
+				D4FF94C22822EF4400C10CF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +78,6 @@
 		D4986C1C2821419F00BCD0B7 /* DailyFX */ = {
 			isa = PBXGroup;
 			children = (
-				D47B95A62822AF0C00D57A9E /* README.md */,
 				D4986C2B282141A000BCD0B7 /* Info.plist */,
 				D4986C1D2821419F00BCD0B7 /* AppDelegate.swift */,
 				D4986C1F2821419F00BCD0B7 /* SceneDelegate.swift */,
@@ -111,6 +110,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D4FF94C22822EF4400C10CF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,10 +134,10 @@
 			);
 			name = DailyFX;
 			packageProductDependencies = (
-				D4986C6F28215DF100BCD0B7 /* DailyFXService */,
 				D4986C7128215E1300BCD0B7 /* Foundational */,
 				D4986C752821679500BCD0B7 /* Toolkit */,
-				D4B9256428229212000132DB /* OrderedCollections */,
+				D4FF94C02822EF1F00C10CF5 /* OrderedCollections */,
+				D4FF94C32822EF4400C10CF5 /* DailyFXService */,
 			);
 			productName = DailyFX;
 			productReference = D4986C1A2821419F00BCD0B7 /* DailyFX.app */;
@@ -409,10 +415,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D4986C6F28215DF100BCD0B7 /* DailyFXService */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DailyFXService;
-		};
 		D4986C7128215E1300BCD0B7 /* Foundational */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Foundational;
@@ -421,10 +423,14 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Toolkit;
 		};
-		D4B9256428229212000132DB /* OrderedCollections */ = {
+		D4FF94C02822EF1F00C10CF5 /* OrderedCollections */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D4B9256328229212000132DB /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = OrderedCollections;
+		};
+		D4FF94C32822EF4400C10CF5 /* DailyFXService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DailyFXService;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
